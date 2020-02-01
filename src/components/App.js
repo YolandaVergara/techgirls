@@ -5,6 +5,7 @@ import Header from './Header';
 import Nav from './Nav';
 import Legacy from './Legacy';
 import PersonalData from './PersonalData';
+import Inform from './Inform';
 import "../stylesheets/app.scss";
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
     super(props);
     this.handleButton = this.handleButton.bind(this);
     this.renderLegacy = this.renderLegacy.bind(this);
+    this.renderInform = this.renderInform.bind(this);
   }
 
 
@@ -24,6 +26,9 @@ class App extends React.Component {
   }
   renderPersonalData(props) {
     return <PersonalData />
+  }
+  renderInform(props) {
+    return <Inform />
   }
 
   render() {
@@ -38,6 +43,7 @@ class App extends React.Component {
           </Route>
           <Route path='/legacy/' render={this.renderLegacy} />
           <Route path='/personal-data/' render={this.renderPersonalData} />
+          <Route path='/inform/' render={this.renderInform} />
         </Switch>
       </Fragment>
     );
