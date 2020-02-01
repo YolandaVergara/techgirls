@@ -10,7 +10,7 @@ function Nav() {
                 <li className="Nav__list__item">Grupos</li>
                 <li className="Nav__list__item">Foros</li>
                 <li className="Nav__list__item">Documentos</li>
-                <li className="Nav__list__item">Legados</li>
+                <li className="Nav__list__item">Legado</li>
 
             </ul>
         </div>
