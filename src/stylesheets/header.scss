@@ -1,7 +1,7 @@
 .Header {
   display: flex;
-  justify-content: space-between;
-  padding: 5rem 0 5rem 0;
+  justify-content: space-around;
+  padding: 5rem 0rem 5rem 0;
   margin: 0 2rem 0 2rem;
   &__logo {
     height: 5rem;
@@ -11,5 +11,14 @@
     width: 40rem;
     border-radius: 2rem;
     border-color: grey;
+    padding-left: 1rem;
   }
+  &__icons {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.far {
+  font-size: 2rem;
 }
