@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import Nav from './Nav';
 import Legacy from './Legacy';
+import PersonalData from './PersonalData';
 import "../stylesheets/app.scss";
 
 class App extends React.Component {
@@ -19,11 +20,12 @@ class App extends React.Component {
     this.renderLegacy();
   }
   renderLegacy(props) {
-    debugger;
-    console.log('Ha entrado!!')
     return <Legacy />
-
   }
+  renderPersonalData(props) {
+    return <PersonalData />
+  }
+
   render() {
     return (
       <Fragment >
@@ -35,6 +37,7 @@ class App extends React.Component {
             </div>
           </Route>
           <Route path='/legacy/' render={this.renderLegacy} />
+          <Route path='/personal-data/' render={this.renderPersonalData} />
         </Switch>
       </Fragment>
     );
