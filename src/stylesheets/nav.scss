@@ -1,0 +1,13 @@
+.Nav {
+  background-color: mediumseagreen;
+  &__list {
+    display: flex;
+    justify-content: center;
+    &__item {
+      list-style-type: none;
+      color: white;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+}

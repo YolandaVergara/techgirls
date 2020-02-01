@@ -1,7 +1,15 @@
-.header {
+.Header {
   display: flex;
+  justify-content: space-between;
+  padding: 5rem 0 5rem 0;
+  margin: 0 2rem 0 2rem;
   &__logo {
     height: 5rem;
-    width: 5rem;
+    width: 15rem;
+  }
+  &__input {
+    width: 40rem;
+    border-radius: 2rem;
+    border-color: grey;
   }
 }

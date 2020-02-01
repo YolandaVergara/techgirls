@@ -6,7 +6,7 @@ import "../stylesheets/header.scss"
 function Header() {
     return (
         <div className="Header">
-            <img classNAme="Header__logo" src={logo} alt="Fundacion Luzón" />
+            <img className="Header__logo" src={logo} alt="Fundacion Luzón" />
             <input
 
                 id="search "

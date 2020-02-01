@@ -12,9 +12,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <Fragment className="container">
-        <Header />
-        <Nav />
+      <Fragment >
+        <div className="container">
+
+
+          <Header />
+          <Nav />
+        </div>
 
       </Fragment>
     );
