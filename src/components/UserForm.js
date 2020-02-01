@@ -39,7 +39,11 @@ const UserForm = () => {
           <label className="legacy__form__div-label">Mi lista de deseos</label>
           <textarea type="text" placeholder="Quiero esto" className="legacy__form__div-input" rows="4" cols="50" />
         </div>
+        <div className="legacy__form__div">
+          <label className="legacy__form__div-label">¿Quién quieres que reciba tu legado?</label>
+          <input type="text" placeholder="Nombre de usuario" className="legacy__form__div-input" rows="4" />
 
+        </div>
       </form>
     </>
   );

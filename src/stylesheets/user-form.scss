@@ -1,6 +1,6 @@
 .legacy {
   &__title {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     padding-top: 2rem;
   }
@@ -9,7 +9,7 @@
     width: 50%;
     padding: 5rem 3rem;
     max-width: 80%;
-    margin: auto;
+    // margin: auto;
 
     background-color: var(--blanco);
     border-radius: 1rem;
@@ -23,12 +23,13 @@
       align-items: center;
 
       &-label {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        font-weight: bold;
         width: 30%;
       }
 
       &-input {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem;
         border-radius: 1rem;
         margin: 1rem;

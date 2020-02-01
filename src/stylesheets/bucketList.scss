@@ -1,8 +1,24 @@
 .BucketList {
-  border: red solid 0.2rem;
-  padding: 5rem 2rem 2rem 2rem;
+  background-color: rgba(142, 235, 184, 0.3);
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1.5rem;
+  margin: 3rem 0 1rem 0;
+  color: rgb(97, 92, 92);
 
   width: 50%;
   &__title {
+    font-size: 1.6rem;
+  }
+  &__description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  &__list {
+    margin: 0 0 1rem 2rem;
+    &__item {
+      font-size: 1.5rem;
+
+      // list-style-type: none;
+    }
   }
 }
