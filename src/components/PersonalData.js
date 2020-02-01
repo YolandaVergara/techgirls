@@ -8,7 +8,6 @@ function Legacy() {
         <div>
             <Header />
             <Nav />
-            <p>Estás en Datos personales</p>
             <Form />
         </div>
     );
