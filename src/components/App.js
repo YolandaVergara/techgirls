@@ -1,18 +1,20 @@
 import React from 'react';
 import { Fragment } from 'react';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import Header from './Header';
+import Nav from './Nav';
 import Legacy from './Legacy';
-
+import "../stylesheets/app.scss";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      form: ''
-    };
     this.handleButton = this.handleButton.bind(this);
     this.renderLegacy = this.renderLegacy.bind(this);
   }
+
+
+
   handleButton(props) {
     this.renderLegacy();
   }
@@ -22,24 +24,25 @@ class App extends React.Component {
     return <Legacy />
 
   }
-
   render() {
     return (
-      <div>
+      <Fragment >
         <Switch>
           <Route exact path='/'>
-            <header />
-            <div className="App"> Hola
-              </div>
-            <button>
-              <Link to="/legacy/">click</Link>
-            </button>
+            <div className="container">
+              <Header />
+              <Nav />
+            </div>
           </Route>
           <Route path='/legacy/' render={this.renderLegacy} />
         </Switch>
-      </div >
+      </Fragment>
     );
   }
 }
+
+
+
+
 
 export default App;
