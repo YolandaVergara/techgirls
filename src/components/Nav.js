@@ -24,6 +24,9 @@ function Nav() {
                 <Link to="/legacy/">
                     <li className="Nav__list__item">Legado</li>
                 </Link>
+                <Link to="/personal-data/">
+                    <li className="Nav__list__item">Datos personales</li>
+                </Link>
 
             </ul>
         </div>
