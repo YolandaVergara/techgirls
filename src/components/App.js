@@ -1,14 +1,24 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import Header from './Header';
+import Nav from './Nav';
+import "../stylesheets/app.scss";
 
-function App() {
-  return (
-    <Fragment>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-    </Fragment>
-  );
+  render() {
+    return (
+      <Fragment className="container">
+        <Header />
+        <Nav />
+
+      </Fragment>
+    );
+  }
 }
 
 export default App;
